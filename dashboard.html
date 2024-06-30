@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+    <div class="sidebar">
+        <h2>Admin Panel</h2>
+        <ul>
+            <li><button class="sidebar-button" onclick="showDashboard()">Dashboard</button></li>
+            <li><button class="sidebar-button" onclick="showComplaint()">Complaints</button></li>
+            <li><button class="sidebar-button" onclick="showReport()">Reports</button></li>
+        </ul>
+    </div>
+    <div id="main-content" class="main-content">
+        <h1>Welcome, Admin!</h1>
+        
+
+        <!-- Recent Complaints Section -->
+        <div id="recent-complaints">
+            <h2>Recent Complaints</h2>
+            <div id="recent-complaints-list" class="complaints-list">
+                <!-- Complaint items will be dynamically added here -->
+            </div>
+        </div>
+    </div>
+    <div id="complaints" class="main-content" style="display: none;">
+        <div class="stats">
+            <button class="stat-item" id="resolved" onclick="showResolvedComplaints()">
+                <img src="file.png" alt="Resolved Complaints">
+                <p id="resolved-count">RESOLVED</p>
+            </button>
+            <button class="stat-item" id="pending" onclick="showPendingComplaints()">
+                <img src="file.png" alt="Pending Complaints">
+                <p id="pending-count">PENDING</p>
+            </button>
+            <button class="stat-item" id="total" onclick="showAllComplaints()">
+                <img src="file.png" alt="Total Complaints">
+                <p id="total-count">TOTAL COMPLAINTS</p>
+            </button>
+        </div>
+    </div>
+    <div id="reports" class="main-content" style="display: none;">
+        <p>Placeholder for Reports content.</p>
+    </div>
+    <div id="pending-complaints" class="main-content" style="display: none;">
+        <h2>Pending Complaints</h2>
+        <div id="pending-list"></div>
+    </div>
+    <div id="resolved-complaints" class="main-content" style="display: none;">
+        <h2>Resolved Complaints</h2>
+        <div id="resolved-list"></div>
+    </div>
+    <div class="logout-button-container">
+        <a href="index.html" class="logout-button">Log Out</a>
+    </div>
+    <script src="dashboard.js"></script>
+</body>
+</html>

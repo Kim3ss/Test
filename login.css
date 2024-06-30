@@ -1,0 +1,63 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #000428, #004e92); /* Background gradient */
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 80vh;
+    text-align: center;
+}
+
+.CMS{
+    color: white;
+    position: relative;
+    top: 80px;
+    font-size: 3em;
+    margin: 0.3em 0;
+    text-decoration: none; 
+    font-size: inherit;    
+    font-weight: inherit;
+    color: inherit; 
+}
+
+.admin-login {
+    background-color: #fff;
+    padding: 20px;
+    margin: 100px auto;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.admin-login h2 {
+    margin-bottom: 20px;    
+    color: black; /* Adjust text color if needed */
+}
+
+.admin-login form {
+    display: flex;
+    flex-direction: column;
+    color: black;
+}
+
+.admin-login label {
+    margin: 10px 0 5px;
+}
+
+.admin-login input,
+.admin-login button {
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.admin-login button {
+    background-color: #007BFF;
+    color: ;
+    border: none;
+    cursor: pointer;
+}

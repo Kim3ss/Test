@@ -1,0 +1,184 @@
+/* General body styling */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: #f0f8ff; /* Background gradient */
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh; /* Adjusted height to fit the viewport */
+    text-align: center;
+    position: relative; /* Ensure body acts as a reference for absolute positioning */
+}
+
+/* Sidebar styling */
+.sidebar {
+    width: 100px;
+    height: 100vh;
+    background: linear-gradient(to right, #000428, #004e92); /* Background gradient */
+    color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding-top: 20px;
+    overflow-y: auto;
+    z-index: 1; /* Ensuring the sidebar stays on top */
+}
+
+/* Sidebar header */
+.sidebar h2 {
+    background-color: #d9534f;
+    color: white;
+    border: 10px;
+    padding: 10px 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Remove default list styling */
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Sidebar list items */
+.sidebar ul li {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/* Sidebar buttons */
+.sidebar-button {
+    width: 100%;
+    padding: 12px;
+    background: none;
+    border: none;
+    color: #fff;
+    text-align: left;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background 0.3s ease;
+}
+
+/* Sidebar button hover effect */
+.sidebar-button:hover {
+    background: #575757;
+}
+
+/* Main content styling */
+.main-content {
+    margin-left: 100px; /* Adjusted to accommodate the sidebar */
+    margin-top: 20px; /* Adjust margin to create space below logout button */
+    padding: 20px;
+    text-align: center;
+}
+
+/* Stats styling */
+.stats {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 100px; /* Added margin to separate from sidebar */
+}
+
+.stat-item {
+    text-align: center;
+    cursor: pointer; /* Adding cursor pointer for interaction */
+    padding: 10px;
+    background-color: #e0e0e0; /* Background color for stats items */
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.stat-item:hover {
+    background-color: #d3d3d3; /* Darker background on hover */
+}
+
+.stat-item img {
+    width: 50px;
+    height: 50px;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Logout button container styling */
+.logout-button-container {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 2; /* Ensure logout button stays on top of main content */
+}
+
+/* Logout button styling */
+.logout-button {
+    background-color: #d9534f;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+}
+
+.logout-button:hover {
+    background-color: #c9302c;
+}
+
+/* General complaint item styling */
+.complaint-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+/* Specific to recent complaints list */
+#recent-complaints-list .complaint-item {
+    width: 100%; /* Ensure full width for consistent alignment */
+    white-space: nowrap; /* Prevent text wrapping */
+    overflow: hidden; /* Hide overflow text */
+    text-overflow: ellipsis; /* Display ellipsis for overflow text */
+}
+
+/* Style for the links within the complaint items */
+.complaint-item a {
+    flex-grow: 1; /* Ensure the link takes up available space */
+    text-align: left;
+    text-decoration: none; /* Remove underline */
+    color: black; /* Optional: Set color */
+}
+
+/* Inline buttons alignment */
+.inline-button {
+    margin-left: 10px; /* Adjust spacing between inline buttons */
+    background-color: #5cb85c; /* Green color for Resolve button */
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    font-size: 12px;
+    cursor: pointer;
+    border-radius: 3px;
+    transition: background-color 0.3s ease;
+}
+
+.inline-button:hover {
+    background-color: #4cae4c; /* Darker green color on hover */
+}
+
+.inline-button.delete {
+    background-color: #d9534f; /* Red color for Delete button */
+}
+
+.inline-button.delete:hover {
+    background-color: #c9302c; /* Darker red color on hover */
+}

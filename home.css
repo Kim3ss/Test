@@ -1,0 +1,137 @@
+/* General body styling */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #000428, #004e92); /* Background gradient */
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 50vh;
+    text-align: center;
+}
+
+
+/* Header containing the admin link */
+.header {
+    position: absolute;
+    top: 20px;
+    right: 20px; /* Positioning admin link to the top right */
+}
+
+
+
+/* Styling for the admin button */
+.header .admin-btn {
+    position: absolute;
+    right:10px;
+    top: 10px;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    background-color: #0056b3;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.admin-btn:hover {
+    background-color: #003d80; /* Hover effect for admin button */
+}
+
+
+
+/* Main title styling */
+.CMS {
+    position: relative;
+    top: 80px;
+    font-size: 3em;
+    margin: 0.3em 0; /* Adjusting margins */
+    text-decoration: none; 
+    font-size: inherit;    
+    font-weight: inherit;
+    color: inherit; 
+    
+}
+
+/* Sub-title styling */
+p {
+    position: relative;
+    top: 80px;
+    font-size: 1.2em;
+    margin: 0.3em 0; /* Adjusting margins */
+}
+
+/* Styling for the complain button */
+.complain-button {
+    
+    position: relative;
+    top: 80px;
+    background-color: #0056b3;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.complain-button:hover {
+    background-color: #003d80; /* Hover effect for complain button */
+}
+
+/* Complain form styling */
+.complain-form {
+    position: relative;
+    top: 80px;
+    display: none; /* Hidden by default */
+    background: white;
+    color: black;
+    padding: 40px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Shadow effect */
+    margin-top: 20px;
+    text-align: left; /* Align text to the left */
+}
+
+/* Styling for the complain form title */
+.complain-form h2 {
+    margin-top: 0;
+}
+
+/* Styling for form labels */
+.complain-form label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+/* Styling for form inputs, selects, and textareas */
+.complain-form input,
+.complain-form select,
+.complain-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Styling for the submit button within the form */
+.complain-form button {
+    background-color: #0056b3;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.complain-form button:hover {
+    background-color: #003d80; /* Hover effect for submit button */
+}
+
+
